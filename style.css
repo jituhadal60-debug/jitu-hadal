@@ -1,0 +1,100 @@
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F0F0DB;
+    color: #30364F;
+    line-height: 1.6;
+}
+
+/* Header / Hero */
+.hero {
+    background-color: #30364F;
+    color: #E1D9BC;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #ACBAC4;
+}
+
+/* Section common styles */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #F0F0DB;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(48, 54, 79, 0.15);
+}
+
+/* Headings */
+section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #30364F;
+    border-bottom: 2px solid #ACBAC4;
+    padding-bottom: 8px;
+}
+
+/* Paragraphs */
+section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Skills list */
+#skills ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#skills ul li {
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+#skills ul li::before {
+    content: "✔ ";
+    color: #30364F;
+    font-weight: bold;
+}
+
+/* Contact section */
+#contact p {
+    margin: 6px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #30364F;
+    color: #E1D9BC;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+}
